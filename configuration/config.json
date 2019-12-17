@@ -1,0 +1,8 @@
+{
+    "macros": {
+        "list": [
+            "absolute/path/to/the/executable1",
+            "absolute/path/to/the/executable2"
+        ]
+    }
+}
