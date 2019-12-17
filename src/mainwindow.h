@@ -16,9 +16,9 @@ public:
     ~MainWindow();
 
     /**
-     * @brief update_status Updates the status of the running program
+     * @brief toggle_components changes the enabled status of each component.
      */
-    void update_status(QString status);
+    void toggle_components();
 
     QVector<QString> macros_list;
 

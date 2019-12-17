@@ -9,6 +9,7 @@
 #include <QJsonObject>
 #include <QJsonValue>
 #include <QDebug>
+#include <QMessageBox>
 
 int main(int argc, char *argv[])
 {
@@ -39,10 +40,14 @@ int main(int argc, char *argv[])
         }
     }
 
+    w.show();
+
     if (w.macros_list.size() == 0) {
-        w.update_status("No macros found. Look at the config.json file");
+        QMessageBox::critical(w.focusWidget(), w.tr("Configuration error"),
+                              w.tr("No macros found. Look at the config.json file"));
+
+        w.toggle_components();
     }
 
-    w.show();
     return a.exec();
 }

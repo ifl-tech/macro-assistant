@@ -15,15 +15,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+QMAKE_LFLAGS += "-static"
+
 SOURCES += \
-    main.cpp \
-    mainwindow.cpp
+    src/main.cpp \
+    src/mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h
+    src/mainwindow.h
 
 FORMS += \
-    mainwindow.ui
+    ui/mainwindow.ui
 
 TRANSLATIONS += \
     macro-assistant_pt_BR.ts
