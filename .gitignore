@@ -35,4 +35,4 @@
 builds/
 
 # QtCreator user files
-*.pro.user
+*.pro.user*
