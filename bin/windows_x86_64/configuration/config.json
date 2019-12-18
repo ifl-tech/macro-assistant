@@ -1,0 +1,8 @@
+{
+    "macros": {
+		"list": [
+			"echo rafael campos nunes loves this application",
+			"A:absolute/path/to/executable"
+		]
+    }
+}
