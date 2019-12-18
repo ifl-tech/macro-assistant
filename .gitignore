@@ -32,7 +32,7 @@
 *.app
 
 # Builds folder
-builds/
+build/
 
 # QtCreator user files
 *.pro.user*
