@@ -44,7 +44,9 @@ int main(int argc, char *argv[])
 
     if (w.macros_list.size() == 0) {
         QMessageBox::critical(w.focusWidget(), w.tr("Configuration error"),
-                              w.tr("No macros found. Look at the config.json file"));
+                              w.tr("No macros found. Look at the config.json file \
+under the configuration folder which has to be in the same folder level of the macro \
+assistant executable."));
 
         w.toggle_components();
     }
